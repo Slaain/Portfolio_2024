@@ -1,6 +1,7 @@
 import Assets, { getAssetURL } from './assets';
 import { getSkills } from './skills';
 import type { Project } from '../types';
+import { base } from '$app/paths';
 export const items: Array<Project> = [
 	{
 		slug: "Demain c'est mieux",
@@ -146,7 +147,7 @@ export const items: Array<Project> = [
 			"Réalisation de tout mes projets visuel réalisé grâce à Adobe Photoshop, Illustrator, Premiere Pro, After Effects, et Illustrator. J'ai également travaillé sur des projets de conception de logos et de marque.",
 		shortDescription:
 			"Réalisation de tout mes projets visuel réalisé grâce à Adobe Creative Suite.",
-		links: [{ to: '../visuel.pdf', label: 'Voir le Projet' }], // Remplacez l'URL par le lien vers le projet réel si disponible
+		links: [{ to: `${base}/visuel.pdf`, label: 'Voir le Projet' }], // Remplacez l'URL par le lien vers le projet réel si disponible
 		logo: Assets.Visuel, 
 		name: 'Projet visuel',
 		period: {
