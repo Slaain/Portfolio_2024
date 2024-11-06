@@ -74,7 +74,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'Site de Shampooing',
-		color: '#FF6347',
+		color: '#CE6A6B',
 		description:
 			"Projet de développement d'un site e-commerce dédié à la vente de shampooings, construit avec React pour une interface utilisateur dynamique et réactive. Le site utilise une base de données SQL pour gérer les produits, les commandes et les informations clients. Des fonctionnalités supplémentaires ont été implémentées et personnalisées grâce à l'utilisation de JavaScript, permettant une expérience utilisateur optimisée. Le design et les interactions ont été adaptés pour garantir une navigation fluide, tout en améliorant la performance du thème initial. Des optimisations ont été faites pour faciliter la gestion des stocks et des transactions en ligne.",
 		shortDescription:
@@ -120,7 +120,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'Anime On Fire',
-		color: '#1E88E5',
+		color: '#FF6347',
 		description:
 			"Projet de création d'un site web dédié à une bibliothèque de manga et de japanimation, offrant aux internautes un espace où ils peuvent partager leur passion. Le site a pour objectif d'accroître sa visibilité auprès des fans de culture japonaise, en exploitant un marché en pleine expansion. Des efforts particuliers ont été portés sur l'amélioration de l'expérience utilisateur et l'optimisation de la navigation pour encourager l'engagement et les interactions entre les membres. Un suivi des tendances du marché et des performances a été mis en place pour ajuster les stratégies de contenu et de référencement.",
 		shortDescription:
@@ -153,7 +153,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'SkMode',
-		color: '#FF6347',
+		color: '#1E88E5',
 		description:
 			"Projet de développement d'un site e-commerce en Symfony, dédié à une cliente spécialisée dans le prêt-à-porter. Le site permet la vente en ligne de vêtements avec une interface intuitive pour faciliter l'expérience d'achat. Le backend repose sur une base de données MySQL pour gérer les produits, les utilisateurs et les commandes, tandis que des scripts PHP assurent le traitement des transactions. L'interface utilisateur est dynamique grâce à l'utilisation de JavaScript, offrant une navigation fluide et réactive. Un système de suivi des ventes et des performances a été intégré, permettant d'analyser en temps réel les tendances de vente et d'optimiser les stratégies commerciales.",
 		shortDescription:
@@ -176,7 +176,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'Projet visuel',
-		color: '#FF6347',
+		color: '#A7001E',
 		description:
 			"Réalisation de tout mes projets visuel réalisé grâce à Adobe Photoshop, Illustrator, Premiere Pro, After Effects, et Illustrator. J'ai également travaillé sur des projets de conception de logos et de marque.",
 		shortDescription:
