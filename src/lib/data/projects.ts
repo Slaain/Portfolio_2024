@@ -74,7 +74,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'Site de Shampooing',
-		color: '#CE6A6B',
+		color: '#F4CFDF',
 		description:
 			"Projet de développement d'un site e-commerce dédié à la vente de shampooings, construit avec React pour une interface utilisateur dynamique et réactive. Le site utilise une base de données SQL pour gérer les produits, les commandes et les informations clients. Des fonctionnalités supplémentaires ont été implémentées et personnalisées grâce à l'utilisation de JavaScript, permettant une expérience utilisateur optimisée. Le design et les interactions ont été adaptés pour garantir une navigation fluide, tout en améliorant la performance du thème initial. Des optimisations ont été faites pour faciliter la gestion des stocks et des transactions en ligne.",
 		shortDescription:
