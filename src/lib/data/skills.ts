@@ -278,14 +278,14 @@ export const items = [
 	// 	name: 'Android',
 	// 	category: 'others'
 	// }),
-	// defineSkill({
-	// 	slug: 'ruby-on-rails',
-	// 	color: 'red',
-	// 	description: 'Ruby on Rails est un framework web que j’ai utilisé pour développer des applications web robustes et scalables.',
-	// 	logo: Assets.Rails,
-	// 	name: 'Ruby on Rails',
-	// 	category: 'framework-backend'
-	// }),
+	 defineSkill({
+		slug: 'elixir',
+	 	color: 'red',
+	 	description: 'Ruby on Rails est un langage de programmation fonctionnel que j’ai utilisé pour développer des applications web robustes et scalables.',
+	 	logo: Assets.Elixir,
+	 	name: 'Blue',
+	 	category: 'framework-backend'
+	 }),
 	// defineSkill({
 	// 	slug: 'grpc',
 	// 	color: 'blue',

@@ -4,6 +4,42 @@ import type { Project } from '../types';
 import { base } from '$app/paths';
 export const items: Array<Project> = [
 	{
+		slug: "Gothime Manager",
+		color: '#573497',
+		description:
+			"GoThime Manager est une solution complète de gestion des horaires de travail, construite en Vue.js pour le site destiné aux managers et administrateurs, et en React Native pour l'application mobile dédiée aux employés. L'interface des managers permet le suivi des statistiques et la gestion des arrivées et retards des employés. Quant à l'application mobile, elle facilite le pointage d'entrée et de sortie via un QR code, avec des graphiques dynamiques créés grâce à VueChart.\n" +
+			"Côté backend, le projet repose sur Elixir (Phoenix), offrant une API REST pour gérer les échanges avec une base de données PostgreSQL. Les requêtes API sont exécutées avec Axios, assurant une récupération des données en temps réel, tandis que Docker est utilisé pour standardiser l'environnement de déploiement et faciliter la gestion des serveurs.",
+		shortDescription:
+			"Développement de GoThime Manager, une application mobile en React Native dédiée aux employés pour le suivi de leurs horaires de travail, et un site en Vue.js pour les managers. L’application permet le pointage via QR code et l’affichage de statistiques en temps réel.",
+		links: [{ to: 'https://github.com/Slaain/Gothime-Manager', label: 'Voir le Projet'}],
+		logo: Assets.GotBat,
+		name: "Gothtime Manager",
+		period: {
+			from: new Date(2024, 10, 7),
+			to: new Date(2024, 10, 29)
+		},
+		skills: getSkills('reactjs', 'tailwindcss', 'nginx', 'docker', 'ansible'),
+		type: 'Application mobile',
+		screenshots: [
+			{
+				label: 'screen 1',
+				src: getAssetURL(Assets.Dcm1)
+			},
+			{
+				label: 'screen 2',
+				src: getAssetURL(Assets.Dcm2)
+			},
+			{
+				label: 'screen 3',
+				src: getAssetURL(Assets.Dcm3)
+			},
+			{
+				label: 'screen 4',
+				src: getAssetURL(Assets.Dcm4)
+			}
+		],
+	},
+	{
 		slug: "Demain c'est mieux",
 		color: '#573497',
 		description:
