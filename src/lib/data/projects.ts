@@ -5,7 +5,7 @@ import { base } from '$app/paths';
 export const items: Array<Project> = [
 	{
 		slug: "Gothime Manager",
-		color: '#573497',
+		color: '#F5DF4D',
 		description:
 			"GoThime Manager est une solution complète de gestion des horaires de travail, construite en Vue.js pour le site destiné aux managers et administrateurs, et en React Native pour l'application mobile dédiée aux employés. L'interface des managers permet le suivi des statistiques et la gestion des arrivées et retards des employés. Quant à l'application mobile, elle facilite le pointage d'entrée et de sortie via un QR code, avec des graphiques dynamiques créés grâce à VueChart.\n" +
 			"Côté backend, le projet repose sur Elixir (Phoenix), offrant une API REST pour gérer les échanges avec une base de données PostgreSQL. Les requêtes API sont exécutées avec Axios, assurant une récupération des données en temps réel, tandis que Docker est utilisé pour standardiser l'environnement de déploiement et faciliter la gestion des serveurs.",
