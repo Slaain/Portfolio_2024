@@ -190,6 +190,14 @@ export const items = [
 		name: 'PostgreSQL',
 		category: 'db'
 	}),
+	defineSkill({
+		slug: 'postgres',
+		color: 'blue',
+		description: 'PostgreSQL est un système de gestion de bases de données open-source que j’ai utilisé pour des applications nécessitant une gestion avancée des données.',
+		logo: Assets.PostgreSQL,
+		name: 'PostgreSQL',
+		category: 'most-used'
+	}),
 	// defineSkill({
 	// 	slug: 'prisma',
 	// 	color: 'blue',
@@ -270,20 +278,28 @@ export const items = [
 	// 	name: 'Nginx',
 	// 	category: 'others'
 	// }),
-	// defineSkill({
-	// 	slug: 'android',
-	// 	color: 'green',
-	// 	description: 'Android est un système d’exploitation mobile que j’ai utilisé pour développer des applications mobiles natives.',
-	// 	logo: Assets.Android,
-	// 	name: 'Android',
-	// 	category: 'others'
-	// }),
+	 defineSkill({
+	 	slug: 'React Native',
+		color: 'green',
+	 	description: 'React Native est un framework react mobile que j’ai utilisé pour développer des applications mobiles natives.',
+	 	logo: Assets.NativeR,
+	 	name: 'React Native',
+	 	category: 'library-frontend'
+	 }),
+	defineSkill({
+		slug: 'React Native',
+		color: 'green',
+		description: 'React Native est un framework react mobile que j’ai utilisé pour développer des applications mobiles natives.',
+		logo: Assets.NativeR,
+		name: 'React Native',
+		category: 'most-used'
+	}),
 	 defineSkill({
 		slug: 'elixir',
-	 	color: 'red',
-	 	description: 'Ruby on Rails est un langage de programmation fonctionnel que j’ai utilisé pour développer des applications web robustes et scalables.',
+	 	color: 'blue',
+	 	description: 'Elixir est un langage de programmation fonctionnel que j’ai utilisé pour développer des applications web robustes et scalables.',
 	 	logo: Assets.Elixir,
-	 	name: 'Blue',
+	 	name: 'Elixir',
 	 	category: 'framework-backend'
 	 }),
 	// defineSkill({

@@ -14,6 +14,8 @@ const Assets = {
 	C: a('c.svg'),
 	Gothime: a('gothtime.mp4'),
 	GotBat:a('bat2.png'),
+	Gotimg:a('goth1.png'),
+	Gotimg1:a('goth2.jpg'),
 	NativeR:a('reactnative.svg'),
 	Elixir:a('Elixirlogo.png'),
 	Cpp: a('cpp.svg'),

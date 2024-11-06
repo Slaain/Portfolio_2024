@@ -13,30 +13,28 @@ export const items: Array<Project> = [
 			"Développement de GoThime Manager, une application mobile en React Native dédiée aux employés pour le suivi de leurs horaires de travail, et un site en Vue.js pour les managers. L’application permet le pointage via QR code et l’affichage de statistiques en temps réel.",
 		links: [{ to: 'https://github.com/Slaain/Gothime-Manager', label: 'Voir le Projet'}],
 		logo: Assets.GotBat,
-		name: "Gothtime Manager",
+		name: "Gothime Manager",
 		period: {
 			from: new Date(2024, 10, 7),
 			to: new Date(2024, 10, 29)
 		},
-		skills: getSkills('reactjs', 'tailwindcss', 'nginx', 'docker', 'ansible'),
-		type: 'Application mobile',
+		skills: getSkills('vu', 'tailwindcss', 'nginx', 'docker', 'ansible', 'React Native', 'elixir',''),
+		type: 'Application Web pour les managers et Application mobile pour les employés',
 		screenshots: [
 			{
-				label: 'screen 1',
-				src: getAssetURL(Assets.Dcm1)
+				label: 'Screen 1',
+				src: getAssetURL(Assets.Gotimg)
 			},
 			{
-				label: 'screen 2',
-				src: getAssetURL(Assets.Dcm2)
+				label: 'Screen 2',
+				src: getAssetURL(Assets.Gotimg1)
 			},
 			{
-				label: 'screen 3',
-				src: getAssetURL(Assets.Dcm3)
+				label: 'Vidéo',
+				src: getAssetURL(Assets.Gothime)
 			},
-			{
-				label: 'screen 4',
-				src: getAssetURL(Assets.Dcm4)
-			}
+
+
 		],
 	},
 	{

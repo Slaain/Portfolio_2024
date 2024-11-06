@@ -103,12 +103,21 @@
 								on:keydown
 								on:keypress
 								on:keyup
-								on:keyup
 							>
-								<div
-									class="screenshot aspect-video bg-contain w-100% cursor-pointer"
-									style={`background-image: url(${item.src});`}
-								/>
+								{#if item.src.endsWith('.mp4') || item.src.endsWith('.webm')}
+									<video
+										src={item.src}
+										class="aspect-video bg-contain w-100% cursor-pointer"
+										controls
+										autoplay
+										loop
+									/>
+								{:else}
+									<div
+										class="screenshot aspect-video bg-contain w-100% cursor-pointer"
+										style={`background-image: url(${item.src});`}
+									/>
+								{/if}
 								<p class="text-[var(--tertiary-text)] font-300">{item.label}</p>
 							</div>
 						{/each}
