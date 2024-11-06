@@ -97,7 +97,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'Liss Cosmetiques',
-		color: '#FF6347',
+		color: '#D4D3DC',
 		description:
 			"Réalisation d'un site de vente de produits cosmétique en utilisant la bibliothèque REACT et une base de données SQL, tout en modifiant et rajoutant des fonctionnalités sur le thème grâce à JavaScript",
 		shortDescription:
