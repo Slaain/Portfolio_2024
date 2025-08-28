@@ -46,14 +46,22 @@ export const items = [
 		name: 'Ansible',
 		category: 'most-used'
 	}),
-	// defineSkill({
-	// 	slug: 'java-most-used',
-	// 	color: 'blue',
-	// 	description: 'Java est un langage de programmation que j’ai utilisé dans le développement d’applications Android et d’applications backend robustes.',
-	// 	logo: Assets.Java,
-	// 	name: 'Java',
-	// 	category: 'most-used'
-	// }),
+	defineSkill({
+		slug: 'java-most-used',
+		color: 'blue',
+		description: 'Java est un langage de programmation que j’ai utilisé dans le développement d’applications Android et d’applications backend robustes.',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'most-used'
+	}),
+	defineSkill({
+		slug: 'angular-most-used',
+		color: 'blue',
+		description: 'Angular est un framework TypeScript que j’ai utilisé pour développer des applications web dynamiques et performantes.',
+		logo: Assets.Angular,
+		name: 'Angular',
+		category: 'most-used'
+	}),
 	defineSkill({
 		slug: 'ts-most-used',
 		color: 'blue',
@@ -62,14 +70,14 @@ export const items = [
 		name: 'TypeScript',
 		category: 'most-used'
 	}),
-	// defineSkill({
-	// 	slug: 'spring-boot-most-used',
-	// 	color: 'green',
-	// 	description: 'Spring Boot est un framework Java que j’ai utilisé pour développer des applications backend robustes et évolutives.',
-	// 	logo: Assets.SpringBoot,
-	// 	name: 'Spring Boot',
-	// 	category: 'most-used'
-	// }),
+	defineSkill({
+		slug: 'spring-boot-most-used',
+		color: 'green',
+		description: 'Spring Boot est un framework Java que j’ai utilisé pour développer des applications backend robustes et évolutives.',
+		logo: Assets.SpringBoot,
+		name: 'Spring Boot',
+		category: 'most-used'
+	}),
 	defineSkill({
 		slug: 'express-most-used',
 		color: 'green',
@@ -220,6 +228,30 @@ export const items = [
 		description: 'Ansible est un outil d’automatisation que j’ai utilisé pour orchestrer le déploiement et la configuration des serveurs.',
 		logo: Assets.Ansible,
 		name: 'Ansible',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'terraform',
+		color: 'orange',
+		description: 'Terraform est un outil d’automatisation que j’ai utilisé pour orchestrer le déploiement et la configuration des serveurs.',
+		logo: Assets.Terraform,
+		name: 'Terraform',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'prometheus',
+		color: 'blue',
+		description: 'Prometheus est un système de surveillance open-source que j’ai utilisé pour collecter et analyser les métriques des applications.',
+		logo: Assets.Prometheus,
+		name: 'Prometheus',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'grafana',
+		color: 'red',
+		description: 'Grafana est un outil de surveillance et de visualisation que j’ai utilisé pour surveiller la performance des systèmes et applications.',
+		logo: Assets.Grafana,
+		name: 'Grafana',
 		category: 'devops'
 	}),
 	// defineSkill({

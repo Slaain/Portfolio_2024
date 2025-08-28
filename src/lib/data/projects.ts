@@ -4,6 +4,31 @@ import type { Project } from '../types';
 import { base } from '$app/paths';
 export const items: Array<Project> = [
 	{
+		slug: "Anapix Medical",
+		color: '#FF6347',
+		description:
+			"Anapix Medical est un site vitrine conçu pour présenter les solutions de l’entreprise. Réalisé avec AngularJS côté frontend, il offre une interface claire et accessible pour mettre en valeur les services proposés." +
+			"Le backend repose sur une base de données MongoDB, permettant la gestion et la mise à jour des contenus. Cette architecture assure une présentation fluide et une maintenance simplifiée du site.",
+		shortDescription:
+			"Développement du site vitrine Anapix Medical, réalisé en AngularJS avec une base de données MongoDB pour la gestion des contenus. Le site met en avant les solutions de l’entreprise à travers une interface claire et moderne, offrant une navigation fluide et une présentation adaptée aux besoins des professionnels de santé.",
+		links: [{ to: 'https://anapix-medical.com/', label: 'Voir le Projet'}],
+		logo: Assets.Anapix,
+		name: "Anapix Medical",
+		period: {
+			from: new Date(2025, 2, 7),
+			to: new Date(2025, 3, 29)
+		},
+		skills: getSkills('angular-most-used', 'css', 'nginx', 'docker','mongodb'),
+		type: 'Application Web pour les managers et Application mobile pour les employés',
+		screenshots: [
+			{
+				label: 'Screen 1',
+				src: getAssetURL(Assets.Anapixsite)
+			},
+
+		],
+	},
+	{
 		slug: "Gothime Manager",
 		color: '#F5DF4D',
 		description:
@@ -39,7 +64,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: "Demain c'est mieux",
-		color: '#573497',
+		color: '#FF6347',
 		description:
 			"Développement d'une application mobile en React Native, connectée à une base de données MongoDB pour la gestion des données utilisateurs et du contenu. Le backend est structuré autour d'une API REST, avec des routes et des modèles de données définis pour organiser les interactions entre le serveur et la base de données. L'application mobile récupère les informations en temps réel via des requêtes fetch effectuées côté frontend, et utilise des hooks d'état (useState) pour stocker et gérer les données localement, ainsi que des hooks d'effet (useEffect) pour déclencher les appels aux API et gérer les effets secondaires liés à l'interface utilisateur.",
 		shortDescription:

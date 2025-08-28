@@ -4,6 +4,21 @@ import { ContractType, type Experience } from '../types';
 
 export const items: Array<Experience> = [
 	{
+		slug: 'AnapixMedical',
+		company: 'AnapixMedical',
+		description: "En tant qu'Architecte des systèmes d'informations j'ai contribué à la mise à jour des outils internes, j'ai pu créer le site internet représenant l'entreprise et la création de plusieurs outils internes pour améliorer la gestion des données médicales et administratives. J'ai également participé à la mise en place de solutions de sécurité pour protéger les informations sensibles des patients.",
+		contract: ContractType.FullTime,
+		type: 'Project Management',
+		location: 'Meyreuil, France',
+		period: { from: new Date(2025, 1, 1), to: new Date(2026, 8, 31) }, // assuming the project started in December 2023 and is ongoing
+		skills: getSkills('Angular', 'Java', 'docker'),
+		name: 'Alternant architecte des systèmes d\'informations',
+		color: '#3478f6',
+		links: [],
+		logo: Assets.Anapix,
+		shortDescription: "Conception et réalisation de solutions web pour le secteur médical, en mettant l’accent sur une expérience utilisateur intuitive et des fonctionnalités adaptées aux besoins des professionnels de santé."
+	},
+	{
 		slug: '99Concepts',
 		company: '99Concepts',
 		description: "En tant que Developpeur junior pour 99Concepts, j'ai dirigé la continuité de la transformation numérique , transformant ainsi un processus manuel et chronophage en une solution numérique robuste et intuitive.",
