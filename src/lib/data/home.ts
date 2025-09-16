@@ -18,7 +18,7 @@ export const description =
 	"Développeur et architecte de système d'informations, je conçois des solutions digitales sur mesure qui allient innovation et performance. Actuellement en alternance chez Anapix Medical et freelance, je conçois et mets à jour des solutions informatiques. Construisons ensemble l\'avenir de votre entreprise."
 
 export const subDescription =
-	'Vous avez ci-dessous différents liens, comme mon Github, Linkedin, mon mail, etc. Pour un premier contact n\'hésitez pas à me contact idéalement par Linkedin / email.'
+	'Vous avez ci-dessous différents liens, comme mon Github, Linkedin, mon mail, etc. Pour un premier contact n\'hésitez pas à me contact idéalement par Linkedin / email ou sur mon numéro de téléphone : 0767430575.';
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/Slaain' },
 	{
