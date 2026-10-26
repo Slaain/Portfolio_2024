@@ -21,7 +21,6 @@ export interface Skill {
 	name: string;
 	logo: string;
 	category: SkillCategory;
-	featured?: boolean;
 	description: string;
 }
 

@@ -2,7 +2,7 @@ import { AnimatePresence, LayoutGroup, motion } from 'motion/react';
 import { useRef, useState } from 'react';
 import { Reveal } from '../components/Reveal';
 import { SectionLabel } from '../components/SectionLabel';
-import { categories, skills } from '../data/skills';
+import { categories, featuredSkills, skills } from '../data/skills';
 import type { SkillCategory } from '../data/types';
 import styles from './Skills.module.css';
 
@@ -20,9 +20,10 @@ export function Skills() {
 	const [filter, setFilter] = useState<Filter>('featured');
 	const gridRef = useRef<HTMLUListElement>(null);
 
-	const visible = skills.filter((s) =>
-		filter === 'all' ? true : filter === 'featured' ? s.featured : s.category === filter
-	);
+	const visible =
+		filter === 'featured'
+			? featuredSkills
+			: skills.filter((s) => filter === 'all' || s.category === filter);
 
 	// One listener drives the spotlight on every card: each card gets the cursor
 	// position relative to itself, so borders light up even on neighbours.

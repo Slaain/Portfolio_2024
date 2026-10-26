@@ -22,7 +22,6 @@ export const skills: Array<Skill> = [
 		name: 'Angular',
 		logo: logo('angular.webp'),
 		category: 'library-frontend',
-		featured: true,
 		description:
 			'Angular est un framework TypeScript que j’ai utilisé pour développer des applications web dynamiques et performantes.'
 	},
@@ -31,7 +30,6 @@ export const skills: Array<Skill> = [
 		name: 'React',
 		logo: logo('react.svg'),
 		category: 'library-frontend',
-		featured: true,
 		description:
 			'React est une bibliothèque JavaScript que j’ai utilisée pour développer des interfaces utilisateur réactives et modulaires.'
 	},
@@ -40,7 +38,6 @@ export const skills: Array<Skill> = [
 		name: 'React Native',
 		logo: logo('reactnative.svg'),
 		category: 'library-frontend',
-		featured: true,
 		description:
 			'React Native est un framework mobile que j’ai utilisé pour développer des applications mobiles natives.'
 	},
@@ -57,7 +54,6 @@ export const skills: Array<Skill> = [
 		name: 'Java',
 		logo: logo('java.webp'),
 		category: 'pro-lang',
-		featured: true,
 		description:
 			'Java est un langage de programmation que j’ai utilisé dans le développement d’applications Android et d’applications backend robustes.'
 	},
@@ -66,7 +62,6 @@ export const skills: Array<Skill> = [
 		name: 'TypeScript',
 		logo: logo('ts.webp'),
 		category: 'pro-lang',
-		featured: true,
 		description:
 			'TypeScript est un sur-ensemble typé de JavaScript que j’ai utilisé pour améliorer la robustesse et la maintenabilité du code.'
 	},
@@ -91,7 +86,6 @@ export const skills: Array<Skill> = [
 		name: 'Spring Boot',
 		logo: logo('spring-boot.svg'),
 		category: 'framework-backend',
-		featured: true,
 		description:
 			'Spring Boot est un framework Java que j’ai utilisé pour développer des applications backend robustes et évolutives.'
 	},
@@ -100,7 +94,6 @@ export const skills: Array<Skill> = [
 		name: 'Express.js',
 		logo: logo('express.webp'),
 		category: 'framework-backend',
-		featured: true,
 		description:
 			'Express.js est un framework pour Node.js que j’ai utilisé pour développer des APIs RESTful et des applications web robustes.'
 	},
@@ -109,7 +102,6 @@ export const skills: Array<Skill> = [
 		name: 'Symfony',
 		logo: logo('symfony.webp'),
 		category: 'framework-backend',
-		featured: true,
 		description:
 			'Symfony est un framework PHP que j’ai utilisé pour développer des sites e-commerce et des applications web complètes.'
 	},
@@ -126,7 +118,6 @@ export const skills: Array<Skill> = [
 		name: 'Docker',
 		logo: logo('docker.svg'),
 		category: 'devops',
-		featured: true,
 		description:
 			'Docker est une plateforme de virtualisation que j’ai utilisée pour containeriser des applications afin de faciliter leur déploiement.'
 	},
@@ -135,7 +126,6 @@ export const skills: Array<Skill> = [
 		name: 'Ansible',
 		logo: logo('ansible.svg'),
 		category: 'devops',
-		featured: true,
 		description:
 			'Ansible est un outil d’automatisation que j’ai utilisé pour orchestrer le déploiement et la configuration des serveurs.'
 	},
@@ -144,9 +134,16 @@ export const skills: Array<Skill> = [
 		name: 'CI/CD',
 		logo: logo('cicd.svg'),
 		category: 'devops',
-		featured: true,
 		description:
 			'Toutes mes applications sont dockerisées et déployées automatiquement via des pipelines CI/CD orchestrés avec Ansible.'
+	},
+	{
+		slug: 'kubernetes',
+		name: 'Kubernetes',
+		logo: logo('kubernetes.svg'),
+		category: 'devops',
+		description:
+			'Kubernetes est un système d’orchestration de conteneurs que j’ai utilisé pour gérer le déploiement et la mise à l’échelle d’applications containerisées.'
 	},
 	{
 		slug: 'terraform',
@@ -193,7 +190,6 @@ export const skills: Array<Skill> = [
 		name: 'MySQL',
 		logo: logo('mysql.svg'),
 		category: 'db',
-		featured: true,
 		description:
 			'MySQL est un système de gestion de bases de données relationnelles que j’ai utilisé pour gérer des données structurées dans mes projets.'
 	},
@@ -202,7 +198,6 @@ export const skills: Array<Skill> = [
 		name: 'PostgreSQL',
 		logo: logo('postgres.webp'),
 		category: 'db',
-		featured: true,
 		description:
 			'PostgreSQL est un système de gestion de bases de données open-source que j’ai utilisé pour des applications nécessitant une gestion avancée des données.'
 	},
@@ -275,7 +270,25 @@ export const skills: Array<Skill> = [
 	}
 ];
 
+/** Skills shown under "Les plus utilisés", in display order. */
+const featuredSlugs = [
+	'angular',
+	'react',
+	'ansible',
+	'java',
+	'ts',
+	'spring-boot',
+	'kubernetes',
+	'terraform',
+	'docker',
+	'ci-cd',
+	'mysql',
+	'postgres'
+];
+
 export const skillBySlug = new Map(skills.map((skill) => [skill.slug, skill]));
 
 export const getSkills = (slugs: Array<string>) =>
 	slugs.map((slug) => skillBySlug.get(slug)).filter((skill): skill is Skill => Boolean(skill));
+
+export const featuredSkills = getSkills(featuredSlugs);
