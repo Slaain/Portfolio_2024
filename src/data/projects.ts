@@ -33,6 +33,21 @@ export const projects: Array<Project> = [
 		]
 	},
 	{
+		slug: 'livreverso',
+		name: 'Livreverso',
+		type: 'Site web & application mobile',
+		color: '#b34754',
+		logo: publicAsset('media/livreverso.webp'),
+		period: { from: '2026-10' },
+		shortDescription:
+			'Un projet pour relier le livre papier à ses versions numériques : identifiez un ouvrage par son code-barres ou son ISBN, puis lisez ou écoutez sur téléphone.',
+		description:
+			"Le site vitrine présente un parcours en trois gestes : scanner le code-barres du livre (ou saisir son ISBN), choisir une version disponible — édition originale, traduction ou audio — puis lire ou écouter sur téléphone. L’application mobile est conçue pour reprendre la lecture là où on l’a laissée.\n\nLe lancement propose gratuitement les œuvres du domaine public en texte intégral, en audio et en traductions libres. Pour les livres récents, le projet prévoit un code unique imprimé dans chaque exemplaire, qui donnera accès à sa version numérique après l’achat papier.\n\nLe site vitrine est développé avec Next.js et Tailwind CSS ; l’application mobile associée avec React Native. Le service est actuellement en pré-lancement et recueille les inscriptions à sa liste d’attente.",
+		link: { to: 'https://livreverso.fr/', label: 'Découvrir Livreverso' },
+		stack: ['nextjs', 'react-native', 'tailwind', 'postgres', 'docker', 'ansible', 'ci-cd'],
+		media: [shot('livreverso.webp', 'Accueil du site Livreverso')]
+	},
+	{
 		slug: 'garage-davtyan-vardanyan',
 		name: 'Garage Davtyan & Vardanyan',
 		type: 'Site vitrine',
@@ -134,21 +149,6 @@ export const projects: Array<Project> = [
 		link: { to: 'https://lisscosmetique.com/', label: 'Voir le site' },
 		stack: deployed('react', 'tailwind', 'mysql'),
 		media: [shot('liss1.webp', 'Boutique')]
-	},
-	{
-		slug: 'skmode',
-		name: 'SkMode',
-		type: 'E-commerce',
-		color: '#1e88e5',
-		logo: publicAsset('logos/sk.webp'),
-		period: { from: '2022-03', to: '2022-06' },
-		shortDescription:
-			"Création d'un site e-commerce pour une cliente de prêt-à-porter, avec suivi des ventes et optimisation des performances pour améliorer l'expérience utilisateur et la visibilité.",
-		description:
-			"Projet de développement d'un site e-commerce en Symfony, dédié à une cliente spécialisée dans le prêt-à-porter. Le site permet la vente en ligne de vêtements avec une interface intuitive pour faciliter l'expérience d'achat. Le backend repose sur une base de données MySQL pour gérer les produits, les utilisateurs et les commandes, tandis que des scripts PHP assurent le traitement des transactions. L'interface utilisateur est dynamique grâce à JavaScript, offrant une navigation fluide et réactive. Un système de suivi des ventes et des performances a été intégré, permettant d'analyser en temps réel les tendances de vente et d'optimiser les stratégies commerciales.",
-		link: { to: 'https://skmode.fr/', label: 'Voir le site' },
-		stack: deployed('symfony', 'mysql', 'js', 'sass'),
-		media: [shot('sk1.webp', 'Boutique')]
 	},
 	{
 		slug: 'anime-on-fire',

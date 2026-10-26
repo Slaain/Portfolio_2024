@@ -4,7 +4,7 @@ import type { Education } from './types';
 export const education: Array<Education> = [
 	{
 		slug: 'epitech',
-		degree: 'Master Pro Cloud',
+		degree: 'Master Pro Cloud (Master 2, Bac +6)',
 		school: 'EPITECH — European Institute of Technology',
 		location: 'France',
 		logo: publicAsset('logos/epitech.webp'),

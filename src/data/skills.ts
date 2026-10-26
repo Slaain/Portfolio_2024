@@ -34,6 +34,14 @@ export const skills: Array<Skill> = [
 			'React est une bibliothèque JavaScript que j’ai utilisée pour développer des interfaces utilisateur réactives et modulaires.'
 	},
 	{
+		slug: 'nextjs',
+		name: 'Next.js',
+		logo: logo('nextjs.svg'),
+		category: 'library-frontend',
+		description:
+			'Next.js est un framework React utilisé pour créer le site vitrine et la liste d’attente de Livreverso.'
+	},
+	{
 		slug: 'react-native',
 		name: 'React Native',
 		logo: logo('reactnative.svg'),
