@@ -26,7 +26,7 @@ const firstDevYear = Math.min(
 );
 
 const stats = [
-	{ value: projects.length, suffix: '', label: 'Projets livrés' },
+	{ value: projects.length, suffix: '+', label: 'Projets livrés' },
 	{ value: new Date().getFullYear() - firstDevYear, suffix: '+', label: "Années d'expérience en développement" },
 	{ value: skills.length, suffix: '', label: 'Technologies maîtrisées' },
 	{ value: education.length, suffix: '', label: 'Diplômes, dont un Master Cloud' }
