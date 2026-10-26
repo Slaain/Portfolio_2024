@@ -1,4 +1,5 @@
 import { publicAsset } from '../lib/public-asset'
+
 import type { Skill, SkillCategory } from './types';
 
 const logo = (file: string) => publicAsset(`logos/${file}`);
@@ -137,6 +138,15 @@ export const skills: Array<Skill> = [
 		featured: true,
 		description:
 			'Ansible est un outil d’automatisation que j’ai utilisé pour orchestrer le déploiement et la configuration des serveurs.'
+	},
+	{
+		slug: 'ci-cd',
+		name: 'CI/CD',
+		logo: logo('cicd.svg'),
+		category: 'devops',
+		featured: true,
+		description:
+			'Toutes mes applications sont dockerisées et déployées automatiquement via des pipelines CI/CD orchestrés avec Ansible.'
 	},
 	{
 		slug: 'terraform',

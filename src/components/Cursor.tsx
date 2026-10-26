@@ -55,8 +55,10 @@ export function Cursor() {
 		const onDown = () => setPressed(true);
 		const onUp = () => {
 			setPressed(false);
-			// A click may open an overlay (project, menu) under a still cursor
+			// A click may open an overlay (project, menu) under a still cursor:
+			// re-check right away and once its reveal animation has finished
 			setTimeout(onScroll, 60);
+			setTimeout(onScroll, 950);
 		};
 		const onLeave = () => setHidden(true);
 
