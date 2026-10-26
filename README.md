@@ -1,30 +1,18 @@
-# Slick Portfolio With Svelte.
+# Portfolio 2026 — Idris Ali
 
-Vercel-like style portfolio template for developers.
+Portfolio personnel en React 19, Vite et TypeScript. Il est publié gratuitement sur GitHub Pages à l'adresse <https://slaain.github.io/Portfolio_2024/>.
 
-If you want to use the template as it is, you can :
+## Développement local
 
-- update files in `src/lib/data` with your data.
-- update `src/lib/index.scss` for custom styling.
-- update `static/favicon.ico` to customize the tab's icon.
+```bash
+npm ci
+npm run dev
+npm run build
+npm run preview
+```
 
-Feel free to explore and hack the template to your needs if you feel like it.
+## Publication
 
-Before deploying to `GitHub Pages`:
+Le workflow GitHub Actions `.github/workflows/deploy.yml` construit `dist/` et le publie sur GitHub Pages à chaque push sur `master`. Le chemin Vite `/Portfolio_2024/` est configuré pour ce dépôt de projet. Les fichiers statiques utilisent ce préfixe aussi pour les logos, captures et PDF.
 
-- make sure to change the `base` parameter in `svelte.config.js`.
-- make sure to update the target branch of the `deploy.yml` file, it is set to build from `master` branch by default.
-- Allow `GitHub Pages` in your repo settings with correct permissions:
-  - Permissions:
-    - go to your repo `Settings` > `Actions` > `General`
-    - in `Actions permissions` : check `Allow all actions and reusable workflows`
-  - Pages:
-    - go to your repo's `Settings` > `Pages`
-    - in Source section, select `Deploy from a branch`.
-    - in Branch section, select `gh-pages` and `/ (root)` and click on save
-
-if you did all the above `CORRECTLY`, and no workflow was launched, try to push another commit (maybe an empty one), otherwise you can create an issue and link your repo.
-
-## Known issues:
-
-- Svelte no longer support `node 14`, use a newer version instead.
+Dans les paramètres du dépôt, `Settings > Pages > Build and deployment > Source` doit être réglé sur **GitHub Actions**. L'URL est ensuite visible dans l'environnement `github-pages` du workflow.

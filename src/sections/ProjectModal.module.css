@@ -1,0 +1,253 @@
+.root {
+	position: fixed;
+	inset: 0;
+	z-index: 200;
+	background: var(--bg);
+}
+
+.scroller {
+	height: 100%;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+}
+
+.bar {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px var(--gutter);
+	background: linear-gradient(var(--bg) 40%, transparent);
+	color: var(--text-soft);
+}
+
+.close {
+	position: relative;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	background: var(--text);
+}
+
+.close span {
+	position: absolute;
+	left: 16px;
+	right: 16px;
+	top: 25px;
+	height: 1.5px;
+	background: var(--bg);
+	transform: rotate(45deg);
+	transition: transform 0.5s var(--ease-out);
+}
+
+.close span:last-child {
+	transform: rotate(-45deg);
+}
+
+.close:hover span {
+	transform: rotate(135deg);
+}
+
+.close:hover span:last-child {
+	transform: rotate(45deg);
+}
+
+.article {
+	padding-bottom: 48px;
+}
+
+.header {
+	padding-block: clamp(24px, 6vw, 80px) clamp(32px, 4vw, 56px);
+}
+
+.type {
+	color: var(--accent);
+	margin-bottom: 16px;
+}
+
+.title {
+	font-size: clamp(56px, 12vw, 200px);
+	font-weight: 500;
+	letter-spacing: -0.065em;
+	line-height: 0.88;
+}
+
+.facts {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 24px 56px;
+	margin-top: clamp(32px, 4vw, 56px);
+}
+
+.facts span {
+	color: var(--muted);
+}
+
+.facts p {
+	margin-top: 6px;
+	font-size: 17px;
+}
+
+.cta {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	padding: 16px 24px;
+	border-radius: 999px;
+	background: var(--accent);
+	color: var(--accent-ink);
+	font-weight: 500;
+}
+
+.media {
+	position: relative;
+	border-radius: var(--radius);
+	overflow: hidden;
+	background: color-mix(in oklab, var(--project-color) 14%, var(--bg-elev));
+	border: 1px solid var(--line);
+}
+
+.media img,
+.media video {
+	width: 100%;
+	height: auto;
+}
+
+.media[data-orientation='portrait'] {
+	display: grid;
+	place-items: center;
+	padding: clamp(24px, 4vw, 56px);
+}
+
+.media[data-orientation='portrait'] img {
+	width: auto;
+	max-height: 76vh;
+	border-radius: 22px;
+	box-shadow: var(--shadow);
+}
+
+.media figcaption {
+	position: absolute;
+	left: 14px;
+	bottom: 14px;
+	padding: 6px 10px;
+	border-radius: 999px;
+	background: var(--glass);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	color: var(--text-soft);
+	font-size: 11px;
+}
+
+.body {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+	gap: clamp(32px, 6vw, 96px);
+	padding-block: clamp(48px, 7vw, 112px);
+}
+
+.stackCol > span {
+	color: var(--muted);
+}
+
+.stack {
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.stack li {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-size: 16px;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	color: var(--text-soft);
+	font-size: 17px;
+	line-height: 1.65;
+	max-width: 68ch;
+}
+
+.short {
+	color: var(--text);
+	font-size: clamp(22px, 2.2vw, 30px);
+	line-height: 1.3;
+	letter-spacing: -0.02em;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+	gap: 16px;
+}
+
+.gallery {
+	align-items: start;
+}
+
+.gallery .media[data-kind='video'] {
+	grid-column: 1 / -1;
+}
+
+.gallery .media[data-orientation='portrait'] img {
+	max-height: 60vh;
+}
+
+.next {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: clamp(64px, 9vw, 140px);
+	padding-top: 32px;
+	border-top: 1px solid var(--line);
+	text-align: left;
+	color: var(--muted);
+}
+
+.nextName {
+	font-size: clamp(44px, 8vw, 128px);
+	font-weight: 500;
+	letter-spacing: -0.06em;
+	line-height: 0.95;
+	color: var(--text);
+	transition: color 0.4s var(--ease-out);
+}
+
+.nextName span {
+	display: inline-block;
+	transition: transform 0.6s var(--ease-out);
+}
+
+.next:hover .nextName {
+	color: var(--accent);
+}
+
+.next:hover .nextName span {
+	transform: translateX(16px);
+}
+
+@media (max-width: 760px) {
+	.body {
+		grid-template-columns: 1fr;
+	}
+	.stack {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.stack li {
+		padding: 6px 12px 6px 6px;
+		border-radius: 999px;
+		border: 1px solid var(--line);
+		font-size: 14px;
+	}
+}

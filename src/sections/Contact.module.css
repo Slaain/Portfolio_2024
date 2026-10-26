@@ -1,0 +1,170 @@
+.root {
+	position: relative;
+	overflow: hidden;
+	padding-top: clamp(96px, 14vw, 180px);
+	border-top: 1px solid var(--line);
+	background: radial-gradient(80% 60% at 80% 100%, var(--accent-soft), transparent 70%), var(--bg);
+}
+
+.kicker {
+	color: var(--text-soft);
+	margin-bottom: 32px;
+}
+
+.heading {
+	font-size: clamp(44px, 8vw, 136px);
+	font-weight: 500;
+	letter-spacing: -0.06em;
+	line-height: 0.95;
+	max-width: 14ch;
+}
+
+.sub {
+	margin-top: 32px;
+	max-width: 48ch;
+	color: var(--text-soft);
+	font-size: 18px;
+}
+
+.actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px 20px;
+	margin-top: 48px;
+}
+
+.mail {
+	display: inline-flex;
+	align-items: center;
+	gap: 18px;
+	padding: 10px 10px 10px 30px;
+	border-radius: 999px;
+	background: var(--accent);
+	color: var(--accent-ink);
+	font-size: clamp(18px, 2.2vw, 28px);
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	max-width: 100%;
+}
+
+.mailText {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mailIcon {
+	display: grid;
+	place-items: center;
+	flex: none;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background: var(--accent-ink);
+	color: var(--accent);
+	transition: transform 0.5s var(--ease-out);
+}
+
+.mail:hover .mailIcon {
+	transform: rotate(45deg);
+}
+
+.copy {
+	padding: 12px 4px;
+	color: var(--text-soft);
+	font-size: 15px;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	text-decoration-color: var(--line-strong);
+	transition: color 0.3s var(--ease-out);
+}
+
+.copy:hover {
+	color: var(--text);
+	text-decoration-color: var(--accent);
+}
+
+.links {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	margin-top: clamp(64px, 8vw, 112px);
+	border-top: 1px solid var(--line);
+}
+
+.link {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	padding: 24px 20px 24px 0;
+	font-size: 17px;
+	transition: color 0.3s var(--ease-out);
+}
+
+.link span {
+	color: var(--muted);
+	font-size: 11px;
+}
+
+.link:hover {
+	color: var(--accent);
+}
+
+.giant {
+	margin-top: clamp(40px, 6vw, 80px);
+	padding-inline: var(--gutter);
+	font-size: clamp(88px, 22vw, 380px);
+	font-weight: 600;
+	letter-spacing: -0.07em;
+	line-height: 0.78;
+	white-space: nowrap;
+	color: transparent;
+	-webkit-text-stroke: 1px var(--line-strong);
+	user-select: none;
+}
+
+.giant span {
+	font-weight: 700;
+	letter-spacing: -0.06em;
+}
+
+.bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+	padding-block: 28px calc(28px + env(safe-area-inset-bottom));
+	color: var(--muted);
+	font-size: 14px;
+}
+
+.top {
+	color: var(--text-soft);
+	transition: color 0.3s var(--ease-out);
+}
+
+.top:hover {
+	color: var(--accent);
+}
+
+@media (max-width: 860px) {
+	.links {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 480px) {
+	.mail {
+		width: 100%;
+		justify-content: space-between;
+		padding-left: 22px;
+		font-size: 17px;
+	}
+	.mailIcon {
+		width: 46px;
+		height: 46px;
+	}
+	.links {
+		grid-template-columns: 1fr;
+	}
+}

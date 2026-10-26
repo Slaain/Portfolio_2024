@@ -1,0 +1,28 @@
+.band {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding-block: 8px clamp(40px, 6vw, 72px);
+}
+
+.chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	padding: 10px 22px 10px 10px;
+	border-radius: 999px;
+	border: 1px solid var(--line);
+	background: var(--bg-elev);
+	font-size: clamp(16px, 1.6vw, 22px);
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	white-space: nowrap;
+	transition:
+		border-color 0.3s var(--ease-out),
+		transform 0.4s var(--ease-out);
+}
+
+.chip:hover {
+	border-color: var(--accent);
+	transform: translateY(-3px);
+}

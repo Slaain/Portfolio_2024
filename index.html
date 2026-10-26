@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Idris Ali — Architecte SI & Développeur</title>
+    <meta
+      name="description"
+      content="Idris Ali, développeur et architecte de systèmes d'information. Je conçois des solutions digitales sur mesure qui allient innovation et performance."
+    />
+    <meta name="theme-color" content="#0b0b0c" />
+    <meta property="og:title" content="Idris Ali — Architecte SI & Développeur" />
+    <meta
+      property="og:description"
+      content="Solutions digitales sur mesure : web, mobile, cloud et DevOps."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      try {
+        const saved = localStorage.getItem('theme');
+        const theme =
+          saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

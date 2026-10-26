@@ -1,0 +1,158 @@
+.grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+	gap: clamp(40px, 7vw, 120px);
+}
+
+.intro {
+	position: sticky;
+	top: 120px;
+	align-self: start;
+}
+
+.heading {
+	font-size: clamp(44px, 6.4vw, 104px);
+	font-weight: 500;
+	letter-spacing: -0.055em;
+	line-height: 0.95;
+}
+
+.lead {
+	margin-top: 28px;
+	max-width: 36ch;
+	color: var(--text-soft);
+	font-size: 18px;
+}
+
+.timeline {
+	position: relative;
+	padding-left: 44px;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(48px, 6vw, 88px);
+}
+
+.track {
+	position: absolute;
+	left: 7px;
+	top: 8px;
+	bottom: 8px;
+	width: 2px;
+	border-radius: 2px;
+	background: var(--line);
+	overflow: hidden;
+}
+
+.fill {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(var(--accent), color-mix(in oklab, var(--accent) 40%, #ffc29e));
+	transform-origin: top;
+}
+
+.item {
+	position: relative;
+}
+
+.node {
+	position: absolute;
+	left: -44px;
+	top: 8px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: var(--bg);
+	border: 2px solid var(--accent);
+	box-shadow: 0 0 0 6px var(--bg);
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.head :global(.logo-tile) {
+	width: 44px;
+	height: 44px;
+	border-radius: 12px;
+}
+
+.company {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.period {
+	color: var(--muted);
+	font-size: 11px;
+	margin-top: 2px;
+}
+
+.contract {
+	margin-left: auto;
+	padding: 5px 12px;
+	border-radius: 999px;
+	background: var(--accent-soft);
+	color: var(--accent);
+	font-size: 13px;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.role {
+	margin-top: 22px;
+	font-size: clamp(26px, 2.8vw, 40px);
+	font-weight: 500;
+	letter-spacing: -0.04em;
+	line-height: 1.05;
+}
+
+.location {
+	margin-top: 8px;
+	color: var(--muted);
+	font-size: 14px;
+}
+
+.desc {
+	margin-top: 18px;
+	color: var(--text-soft);
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 20px;
+}
+
+.tags li {
+	padding: 6px 12px;
+	border-radius: 999px;
+	border: 1px solid var(--line-strong);
+	font-size: 13px;
+	color: var(--text-soft);
+}
+
+@media (max-width: 900px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+	.intro {
+		position: static;
+	}
+	.timeline {
+		padding-left: 36px;
+	}
+	.node {
+		left: -36px;
+	}
+	.contract {
+		display: none;
+	}
+}
